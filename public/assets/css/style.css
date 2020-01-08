@@ -1,0 +1,108 @@
+
+/* mon code */
+ * {
+	box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url('../img/burger_background.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  #page-name {
+    text-align: center;
+    margin: 30px 0;
+  }
+  #main-image {
+    height: 150px;
+  }
+
+  .title {
+    font-family: 'Skranji', cursive;
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 4px 4px grey;
+	font-size: 4rem;
+  }
+
+/* h1 {
+  font-size: 2vw;
+  font-family: 'Sniglet', cursive;
+  border-bottom: orange solid 2px;
+  border-radius: 50px 50px 10px 10px;
+  background-color: orange;
+  padding: 2vw;
+  margin-bottom: 1vw;
+
+} */
+
+#create-btn {
+  font-size: 2vw;
+  border: none;
+  background-color: #aa0a0a;
+  font-weight: bold;
+  padding: .5vw;
+  color:white;
+  margin-top: 10px;
+  font-family: fantasy;
+}
+
+
+
+#devoured-burgers {
+  color:black;
+  font-size:20px;
+  font-family: 'Shrikhand';
+}
+
+#container{
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+
+
+#all-burgers{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  margin-bottom: 1vw;
+}
+
+#berder-storage{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#devoured-burgers{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#berder-storage, #devoured-burgers{
+  margin: 0vw 1vw 0vw 1vw
+}
+
+.flex-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#create-btn, #burger-box{
+  flex: 0 0 100%;
+  margin-bottom: .5vw;
+}
+
+.footer {
+  font-family: 'Shrikhand';
+  line-height: 30px;
+  background-color:#0b3b89;
+  color: white;
+  text-align: center;
+  margin-top: 70px;
+  padding: 10px 0px;
+  font-size: 15px;
+}
